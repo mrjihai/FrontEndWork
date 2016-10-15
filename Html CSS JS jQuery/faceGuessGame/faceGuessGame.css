@@ -1,0 +1,18 @@
+img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+#leftSide{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black
+}
+#rightSide {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 610px;
+    border: 1px solid black;
+}

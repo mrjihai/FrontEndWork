@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="datingWebsite.css">
+</head>
+<body>
+<div id ='main'>
+    <form  action ='http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php' method="post" enctype="multipart/form-data">
+    <div id = 'face'>
+        <fieldset>
+            <legend>Your Face</legend>
+            <label for="picture">Your image :</label> <input type= "file" id = 'picture' required><br>
+            <label>Image preview :</label><img id="preview" src="" alt="">
+        </fieldset>
+    </div>
+    <div id = 'general'>
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="">Name :</label><input type="text" name = 'name' placeholder="Your full name" required><br>
+            <label for="">Gender :</label><input type="radio" name="sex" required>Male<input type="radio" name="sex" required>Female <br>
+            <label for="">Age :</label><input type="number" name="age" value="" min = '18', max = '120' required> <br>
+            <label for="">Date of birth :</label><input type="date" name = 'date'><br>
+            <label for="">Favorite :</label> <input type="color"><br>
+            <label for="">Which Country:</label>
+            <select class="" name="">
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+
+            </select><br>
+        </fieldset>
+    </div>
+    <div id = 'indicators'>
+
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="">Height :</label><span class = "span-s1">Short</span><input type="range" min="0" max="100"min="0" max="100"><span class = "span-s2">Tall</span><br>
+            <label for="">Salary :</label><span class = "span-s1">Poor</span><input type="range" min="0" max="100"><span class = "span-s2">Rich</span><br>
+        </fieldset>
+    </div>
+    <div id = 'contact'>
+        <fieldset>
+            <legend>Your contact Information</legend>
+            <label for="">Email :</label><input type="email" name="email" value="" required><br>
+            <label for="">Mobile :</label><input type="tel" name='tel'><br>
+            <label for="">Address :</label><textarea name="address" rows="2" cols="20"></textarea><br>
+            <label for="">Method to contact :</label> <input type="checkbox">Email<input type="checkbox">Mobile<input type="checkbox">In-app chat <br>
+        </fieldset>
+    </div>
+    <input type="submit" name="submit" value="Submit"> <input type="reset" name="reset" value="Reset">
+    </form>
+</div>
+    <script src = 'datingWebsite.js'></script>
+</body>
+</html>
