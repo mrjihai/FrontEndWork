@@ -6,3 +6,7 @@ http://htmlpreview.github.com/?https://github.com/mrjihai/MyFrontEndWork/blob/ma
 <br>
 A Face Guess Game:<br>
 http://htmlpreview.github.com/?https://github.com/mrjihai/MyFrontEndWork/blob/master/Html%20CSS%20JS%20jQuery/faceGuessGame/FaceGuessGame.html
+<br>
+Slides: 
+<br>
+http://htmlpreview.github.io/?https://github.com/mrjihai/MyFrontEndWork/blob/master/Html%20CSS%20JS%20jQuery/slides/slides.html
