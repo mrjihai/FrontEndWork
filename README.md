@@ -2,11 +2,13 @@
 
 Html + Css + Javascript/jQuery Project<br>
 A dating webstie:<br>
-http://htmlpreview.github.com/?https://github.com/mrjihai/MyFrontEndWork/blob/master/Html%20CSS%20JS%20jQuery/datingWebsite/Dating%20Website.html
+<a herf ="http://htmlpreview.github.com/?https://github.com/mrjihai/MyFrontEndWork/blob/master/Html%20CSS%20JS%20jQuery/datingWebsite/Dating%20Website.html">Demo</a>
+
 <br>
 A face guess game:<br>
-http://htmlpreview.github.com/?https://github.com/mrjihai/MyFrontEndWork/blob/master/Html%20CSS%20JS%20jQuery/faceGuessGame/FaceGuessGame.html
+<a herf ="http://htmlpreview.github.com/?https://github.com/mrjihai/MyFrontEndWork/blob/master/Html%20CSS%20JS%20jQuery/faceGuessGame/FaceGuessGame.html">Demo</a>
 <br>
-Slides: 
+Slides:
+<a herf ="http://htmlpreview.github.io/?https://github.com/mrjihai/MyFrontEndWork/blob/master/Html%20CSS%20JS%20jQuery/slides/slides.html">Demo</a>
 <br>
-http://htmlpreview.github.io/?https://github.com/mrjihai/MyFrontEndWork/blob/master/Html%20CSS%20JS%20jQuery/slides/slides.html
+
