@@ -48,7 +48,9 @@ address{
      background: #303F9F;
 
 }
-
+.navbar-right{
+    color:white;
+}
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
