@@ -1,3 +1,6 @@
+bodY{
+    background-color: #e3e2cf;
+}
 .row-header{
     margin:0px auto;
     padding:0px auto;
@@ -19,7 +22,7 @@
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
-    background: #7986CB ;
+    background: #b82f43 ;
     color:floralwhite;
 }
 .about-title{
@@ -45,8 +48,10 @@ address{
 
 
 .navbar-inverse {
-     background: #303F9F;
 
+}
+.navbar-header a{
+    padding: 0;
 }
 .navbar-right{
     color:white;
@@ -54,27 +59,31 @@ address{
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #fff;
-    background: #1A237E;
+    color: white;
+    background: #454645;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
  .navbar-inverse .navbar-nav > .open > a:hover,
  .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #fff;
-    background: #1A237E;
+    color: white;
+    background: #454645;
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
 .navbar-inverse .navbar-nav .open .dropdown-menu {
-    background-color: #303F9F;
-    color:#eeeeee;
+    color:white;
+    background: #454645;
+
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
     color:#000000;
 }
-
+.breadcrumb{
+    background-color: #e3e2cf;
+    border-bottom: 1px solid black;
+}
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -83,4 +92,17 @@ address{
 }
 .affix {
     top:80px;
+}
+
+.carousel {
+    background:#1A237E;
+}
+.carousel .item {
+  height: 300px;
+}
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
 }

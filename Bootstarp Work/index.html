@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Ristorante Con Fusion</title>
+    <title>Sichuan Cuisine</title>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
@@ -18,7 +18,7 @@
     <nav class= 'navbar navbar-inverse navbar-fixed-top' role ='navigation'>
         <div class="container">
             <div class="row">
-                <div class ='col-xs-12 col-sm-5' >
+                <div class ='col-xs-12 col-sm-11' >
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
@@ -26,7 +26,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" height=30 width= alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" height=50 width=60 alt=""></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -49,32 +49,46 @@
                                 </ul>
                              <li><a href="contactus.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
                         </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                           <li><a data-toggle="modal" data-target="#loginModal">
+                           <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                           </li>
+                        </ul>
                     </div>
                 </div>
-                <div class ='col-xs-12 col-sm-7' >
-                    <form id ="signin" class="form-inline navbar-form navbar-right">
-                      <div class="form-group">
-                        <label class="sr-only" for="InputEmail">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <label class="sr-only" for="InputPassword">Password</label>
-                        <input type="password" class="form-control" id="InputPassword" placeholder="Password">
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Remember me
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Sign in</button>
-                    </form>
-                </div>
-
             </div>
-
-
         </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="InputEmail">Email address</label>
+                    <input type="email" class="form-control input-sm" id="InputEmail" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="InputPassword">Password</label>
+                    <input type="password" class="form-control input-sm" id="InputPassword" placeholder="Password">
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-xs">Sign in</button>
+                  <button type="submit" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <header class= 'jumbotron row-header'>
 
@@ -83,9 +97,11 @@
         <div class = 'container'>
             <div class = 'row row-header '>
                 <div class ='col-xs-12 col-sm-8'>
-                    <h1>Ristorante con Fusion</h1>
+                    <h1>Sichuan Cuisine</h1>
                     <p style="padding:40px;"></p>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>A style of Chinese cuisine originating from Sichuan province in southwestern China.
+                        It has bold flavours, particularly the pungency and spiciness resulting from liberal use
+                        of garlic and chili peppers, as well as the unique flavor of the Sichuan pepper.</p>
                 </div>
                 <div class ='col-xs-12 col-sm-2' >
                     <p style="padding:20px;"></p>
@@ -93,12 +109,76 @@
                 </div>
                 <div class ='col-xs-12 col-sm-2' >
                     <p style="padding:50px;"></p>
-                        <a href="#reserve" class="btn btn-warning" role="button">Reserve Table Button</a>
+                        <a href="#reserve" class="btn btn-primary btn-block" role="button"
+                        data-toggle="tooltip" data-placement="bottom" title="Or call us at +12345678">Reserve Table</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <div id ="myCarousel"class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive"
+                             src="img/kungbao.jpg" alt="kungbao">
+                            <div class="carousel-caption">
+                            <h2>Kung Bao Chicken  <span class="label label-danger">Hot</span> <span class="badge">$12.99</span></h2>
+                            <p>A spicy stir-fry dish made with chicken, peanuts, vegetables, and chili peppers.
+                                It consists of diced marinated chicken stir-fried with orange or orange juice,
+                                 ginger, garlic, chicken broth, sugar, cooking oil, corn starch, and salt and pepper to taste.</p>
+                            <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive"
+                             src="img/buffet.png" alt="Buffet">
+                            <div class="carousel-caption">
+                            <h2>Weekend Grand Buffet <span class="label label-danger label-xs">New</span></h2>
+                            <p>Featuring mouthwatering combinations with a choice of five different salads,
+                                six enticing appetizers, six main entrees and five choicest desserts.
+                                Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive"
+                             src="img/zhonghua.jpg" alt="Cooking Master Boy">...
+                            <div class="carousel-caption">
+                                <h2>Cooking Master Boy</h2>
+                                <h4>Executive Chef</h4>
+                                <p>Award winning three-star Michelin chef with wide
+                                 International experience having worked closely with
+                                 whos-who in the culinary world, he specializes in
+                                  creating mouthwatering Indo-Italian fusion experiences.
+                                 </p>
+                                 <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
 
+
+
+            </div>
+        </div>
+    </div>
     <div class = 'container'>
         <div class= 'row row-content '>
             <div class="col-xs-12 col-sm-3 col-sm-push-9">
@@ -110,17 +190,16 @@
                     <div class="media-left media-middle">
                         <a href="#">
                         <img class="media-object img-thumbnail"
-                         src="img/uthappizza.png" alt="Uthappizza">
+                         src="img/kungbao.jpg" alt="kungbao">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h2 class="media-heading">Uthappizza  <span
+                        <h2 class="media-heading">Kung Bao Chicken  <span
                             class="label label-danger label-xs"
-                        > Hot</span> <span class="badge">$4.99</span></h2>
-                        <p>A unique combination of Indian Uthappam (pancake) and
-                          Italian pizza, topped with Cerignola olives, ripe vine
-                          cherry tomatoes, Vidalia onion, Guntur chillies and
-                          Buffalo Paneer.</p>
+                        > Hot</span> <span class="badge">$12.99</span></h2>
+                        <p>A spicy stir-fry dish made with chicken, peanuts, vegetables, and chili peppers.
+                            It consists of diced marinated chicken stir-fried with orange or orange juice,
+                             ginger, garlic, chicken broth, sugar, cooking oil, corn starch, and salt and pepper to taste.</p>
                         <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
                     </div>
                 </div>
@@ -135,7 +214,6 @@
             </div>
             <div class ="col-xs-12 col-sm-9">
                 <div class="media">
-
                     <div class="media-body">
                         <h2 class="media-heading">Weekend Grand Buffet  <span
                             class="label label-danger label-xs"
@@ -166,11 +244,11 @@
                     <div class="media-left media-middle">
                         <a href="#">
                         <img class="media-object img-thumbnail"
-                         src="img/alberto.png" alt="Alberto Somayya">
+                         src="img/zhonghua.jpg" alt="Cooking Master Boy">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h2 class="media-heading">Alberto Somayya</h2>
+                        <h2 class="media-heading">Cooking Master Boy</h2>
                         <h4>Executive Chef</h4>
                         <p>Award winning three-star Michelin chef with wide
                          International experience having worked closely with
@@ -232,7 +310,7 @@
         <div class = 'container'>
             <div class = 'row'>
                 <div class="col-xs-5 col-offset-1 col-sm-2 col-sm-offset-1">
-                    <h5>Links</h5>
+                    <h5><strong>Links</strong></h5>
                     <ul class='list-unstyled'>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
@@ -241,7 +319,7 @@
                     </ul>
                 </div>
                 <div  class="col-xs-6 col-sm-5">
-                    <h5>Our Address</h5>
+                    <h5><strong>Our Address</strong></h5>
                     <address>
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
@@ -268,6 +346,11 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+         });
+    </script>
 </body>
 
 </html>
