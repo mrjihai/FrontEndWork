@@ -90,6 +90,82 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="reserve" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Make A Reservation</h4>
+          </div>
+          <div class="modal-body">
+              <div id= "reserve"class= 'row'>
+                  <div class="col-xs-12 col-sm-12">
+                      <form class ="form-horizontal" role = "form" action="">
+                          <div class=" row form-group">
+                              <div class="col-xs-6 col-sm-3">
+                                  <p>Number of Guest</p>
+                              </div>
+                              <div class="col-xs-6 col-sm-9">
+                                      <input type="checkbox"  value=""> 1
+                                      <input type="checkbox" value=""> 2
+                                      <input type="checkbox"  value=""> 3
+                                      <input type="checkbox"  value=""> 4
+                                      <input type="checkbox"  value=""> 5
+                                      <input type="checkbox"  value=""> 6
+                              </div>
+
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-6 col-sm-3">
+                                  <p>Section</p>
+                              </div >
+                              <div class="col-xs-6 col-sm-9">
+                                  <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                      <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                      <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                                    </label>
+                                  </div>
+                              </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-xs-6 col-sm-3">
+                                  <p>Date and Time</p>
+                              </div>
+                              <div class="col-xs-6 col-sm-9">
+                                  <label for=""><input type="date" name="name" value=""></label>
+                                  <label for=""><input type="time" name="name" value=""></label>
+                              </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-xs-6 col-sm-3">
+                              </div>
+                              <div class="col-xs-6 col-sm-9">
+                                  <button type="button" class="btn btn-primary">Submit</button>
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+
+                      </form>
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Pleace <strong>call</strong> us to reserve for more than 6 guests.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class= 'jumbotron row-header'>
 
         <!-- Main component for a primary marketing message or call to action -->
@@ -109,8 +185,7 @@
                 </div>
                 <div class ='col-xs-12 col-sm-2' >
                     <p style="padding:50px;"></p>
-                        <a href="#reserve" class="btn btn-primary btn-block" role="button"
-                        data-toggle="tooltip" data-placement="bottom" title="Or call us at +12345678">Reserve Table</a>
+                        <a href="#reserve" class="btn btn-primary btn-block" role="button" data-toggle="modal" data-target="#reserve">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -139,12 +214,14 @@
                         </div>
                         <div class="item">
                             <img class="img-responsive"
-                             src="img/buffet.png" alt="Buffet">
+                             src="img/hotpot.jpg" alt="hotpot">
                             <div class="carousel-caption">
-                            <h2>Weekend Grand Buffet <span class="label label-danger label-xs">New</span></h2>
-                            <p>Featuring mouthwatering combinations with a choice of five different salads,
-                                six enticing appetizers, six main entrees and five choicest desserts.
-                                Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                            <h2>Sichuan Hot Pot <span class="label label-danger label-xs">New</span></h2>
+                            <p>It consists of a simmering metal pot of stock at the center of the dining table.
+                                While the hot pot is kept simmering, ingredients are placed into the pot and are cooked at the table.
+                                 Typical hot pot dishes include thinly sliced meat, leaf vegetables, mushrooms, wontons, egg dumplings,
+                                  tofu and seafood. The cooked food is usually eaten with a dipping sauce.
+                                  Hot pot meals are usually eaten in the winter during supper time.</p>
                                 <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
                             </div>
                         </div>
@@ -154,10 +231,10 @@
                             <div class="carousel-caption">
                                 <h2>Cooking Master Boy</h2>
                                 <h4>Executive Chef</h4>
-                                <p>Award winning three-star Michelin chef with wide
-                                 International experience having worked closely with
-                                 whos-who in the culinary world, he specializes in
-                                  creating mouthwatering Indo-Italian fusion experiences.
+                                <p>Cooking Master Boy has the pride of a truly experienced chef and having learned
+                                    from his mother that a chef's purpose is to create a dish that
+                                    makes people happy, he always put his customers' needs
+                                    first and is always able to make a creative dish that greatly satisfies them.
                                  </p>
                                  <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
                             </div>
@@ -215,19 +292,21 @@
             <div class ="col-xs-12 col-sm-9">
                 <div class="media">
                     <div class="media-body">
-                        <h2 class="media-heading">Weekend Grand Buffet  <span
+                        <h2 class="media-heading">Sichuan Hot Pot  <span
                             class="label label-danger label-xs"
                         > New</span></h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads,
-                            six enticing appetizers, six main entrees and five choicest desserts.
-                            Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                        <p>It consists of a simmering metal pot of stock at the center of the dining table.
+                            While the hot pot is kept simmering, ingredients are placed into the pot and are cooked at the table.
+                             Typical hot pot dishes include thinly sliced meat, leaf vegetables, mushrooms, wontons, egg dumplings,
+                              tofu and seafood. The cooked food is usually eaten with a dipping sauce.
+                              Hot pot meals are usually eaten in the winter during supper time.</p>
                         <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
                     </div>
 
                     <div class="media-right media-middle">
                         <a href="#">
                         <img class="media-object img-thumbnail"
-                         src="img/buffet.png" alt="buffet">
+                         src="img/hotpot.jpg" alt="hotpot">
                         </a>
                     </div>
                 </div>
@@ -250,10 +329,10 @@
                     <div class="media-body">
                         <h2 class="media-heading">Cooking Master Boy</h2>
                         <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide
-                         International experience having worked closely with
-                         whos-who in the culinary world, he specializes in
-                          creating mouthwatering Indo-Italian fusion experiences.
+                        <p>Cooking Master Boy has the pride of a truly experienced chef and having learned
+                            from his mother that a chef's purpose is to create a dish that
+                            makes people happy, he always put his customers' needs
+                            first and is always able to make a creative dish that greatly satisfies them.
                          </p>
                         <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
                     </div>
@@ -261,49 +340,7 @@
             </div>
         </div>
 
-        <div id= "reserve"class= 'row row-content'>
-            <div class="col-xs-12 col-sm-3">
-                <h3>
-                    Reserve a Table
-                </h3>
-            </div>
-            <div class="col-xs-12 col-sm-9">
-                <form class ="form-horizontal" role = "form" action="">
-                    <div class="form-group">
-                        <div class="col-xs-6 col-sm-2">
-                            <p>Number of Guest</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-6">
-                                <input type="checkbox"  value=""> 1
-                                <input type="checkbox" value=""> 2
-                                <input type="checkbox"  value=""> 3
-                                <input type="checkbox"  value=""> 4
-                                <input type="checkbox"  value=""> 5
-                                <input type="checkbox"  value=""> 6
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-xs-4 col-sm-2">
-                            <p>Date and Time</p>
-                        </div>
-                        <div class="col-xs-4 col-sm-3">
-                            <div class="input-group">
-                                <input type="text" class="" name="name" value="" placeholder="Date">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3">
-                            <input type="text" name="name" value="" placeholder="Time">
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-primary col-sm-offset-2" role="button"> Reserve</a>
-                </form>
 
-                <div class="alert alert-warning alert-dismissible" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <strong>Warning!</strong> Pleace <strong>call</strong> us to reserve for more than 6 guests.
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer class= 'row-footer'>
@@ -346,11 +383,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">
-        $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-         });
-    </script>
+
 </body>
 
 </html>
