@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="css/local_weather.css">
+</head>
+<body>
+    <div class="container">
+    <div class = "row">
+        <div class="col-md-12">
+            <h3 class="city">Loading....</h3>
+        </div>
+    </div>
+
+	<div class="row">
+		<div class=" col-md-8">
+			<div class="row">
+                <div class="col-md-8 dayandtime">
+                    <h5 class="day"></h5>
+                </div>
+				<div class="col-md-8">
+                    <h5 class="weather"></h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 temp">
+                    <div class='temp'>
+                        <i class="fa-2x wi wi-thermometer wi-fw"></i>
+                        <div class ="tempture">0</div>
+                        <div class='f active'>°F</div>
+                        <div class ="c">/ °C</div>
+                    </div>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-4 col-md-pull-2 weatherIcon">
+            <canvas id="icon" width="110px" height="110px">
+            </canvas>
+        </div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12 other">
+                    <div class="hold">
+                        <i class="wi wi-raindrop wi-fw"></i>
+                        <div class = 'precipProbability'>0</div>
+                    </div>
+                    <div class="hold">
+                        <i class="wi wi-strong-wind wi-fw"> </i>
+                        <div class ='windSpeed'>0</div>
+                    </div>
+                    <div class="hold">
+                        <i class=" wi wi-humidity wi-fw"> </i>
+                        <div class ='humidity'>0</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+    <div class = "row">
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://use.fontawesome.com/e4a745c582.js"></script>
+<script src="js/skycons.js"></script>
+<script src="js/local_weather.js">
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+
+.container{
+    background-image: url(imgs/clear-day.jpg);
+    background-size:100% 100%;
+    width: 400px;
+    color:gray;
+    margin-top: 100px;
+    color:white;
+}
+.temp{
+    display: inline-block;
+}
+.tempture{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 45px;
+}
+.c{
+    display: inline-block;
+    vertical-align: top
+}
+.c:hover{
+    cursor: pointer;
+}
+.f{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.other{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hold{
+    display: inline-block;
+    margin-left: 20px;
+
+}
+.precipProbability{
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.windSpeed{
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 5px;
+
+}
+.humidity{
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 5px;
+
+}
+.weatherIcon{
+    margin-top: 2%;
+}
