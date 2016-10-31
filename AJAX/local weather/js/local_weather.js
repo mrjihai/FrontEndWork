@@ -58,7 +58,7 @@ var getDayandTime = function(){
 }
 
 var setBackground = function(weatherIcon){
-        $(".container1").css('background-image',"url(imgs/"+ weatherIcon +".jpg)")
+        $(".container-bg").css('background-image',"url(imgs/"+ weatherIcon +".jpg)")
 }
 
 var changeUint = function(tempF) {

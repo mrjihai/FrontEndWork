@@ -60,6 +60,9 @@ var showCurrentTime = function() {
 var showTimeProgress = function(value){
     //console.log($('.time-progress-rate')[0])
     $('.time-progress-rate')[0].value = value
+    var rate = $('.time-progress-rate')[0].value/100
+    $('.progress-fill').width(rate*152)
+
 }
 
 //函数:根据歌曲的ID改变背景图片,包括虚化背景和磁盘背景
@@ -191,6 +194,7 @@ var setTimeProgress = function() {
     var newtime = rate * player.duration
     //console.log(newtime)
     player.currentTime = newtime
+    $('.progress-fill').width((rate*155).toFixed(0))
 }
 
 //函数:根据播放模式来播放歌曲

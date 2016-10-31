@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="css/local_weather.css">
 </head>
 <body>
-    <div class="container1">
-        </div>
+    <div class="container container-bg">
+
     </div>
-    <div class="container">
+    <div class="container container-main">
         <div class = "row">
             <div class="col-md-12">
                 <h3 class="city">Loading....</h3>
             </div>
         </div>
 
-    	<div class="row">
-    		<div class=" col-md-8">
+    	<div class="row temp-container">
+    		<div class="col-md-12 ">
     			<div class="row">
                     <div class="col-md-8 dayandtime">
                         <h5 class="day"></h5>
@@ -45,7 +45,7 @@
     				</div>
     			</div>
     		</div>
-            <div class="col-md-4 col-md-pull-2 weatherIcon">
+            <div class=" weatherIcon">
                 <canvas id="icon" width="110px" height="110px">
                 </canvas>
             </div>
@@ -71,8 +71,6 @@
                 </div>
     		</div>
     	</div>
-        <div class = "row">
-        </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://use.fontawesome.com/e4a745c582.js"></script>
