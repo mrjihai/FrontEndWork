@@ -1,0 +1,55 @@
+
+body{
+    color: black;
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+h4{
+    font-weight: bold;
+}
+hr{
+    border-width: 1px;
+    border-color: grey;
+}
+.container-fluid{
+    margin: 10px 10px 10px 50px;
+}
+
+#nytimes,#wikipedia{
+    background: rgb(231, 228, 231);
+    opacity: .8;
+    padding: 10px 20px 10px 20px
+
+}
+ul{
+    margin-left: -25px;
+}
+#nytimes{
+    margin-right: 20px;
+
+}
+#wikipedia{
+    margin-right: 20px;
+
+}
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    width:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+
+
+a{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+}

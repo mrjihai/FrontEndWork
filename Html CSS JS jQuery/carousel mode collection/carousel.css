@@ -1,0 +1,155 @@
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.slide-list{
+    position: relative;
+    display: flex;
+    width: 350px;
+    height: 308px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+.slide-btn{
+    position: absolute;
+    font-size: 150px;
+    z-index: 10;
+    transition:1s ease-out;
+    color:black;
+    opacity: 0.6;
+}
+.slide-btn-prev{
+    left: -60px;
+}
+.slide-btn-next{
+    right: -60px;
+}
+.slide-btn-next:hover,.slide-btn-prev:hover{
+    display: block;
+    cursor: pointer;
+}
+.slide-item{
+    border: 1px solid #dfe0d9;
+    position: absolute;
+    transition:0.5s ease-out;
+    z-index: 2;
+    left:20px;
+}
+.silde-indicator{
+    position: absolute;
+    bottom: 0;
+    font-size:15px;
+    z-index: 5;
+    color:rgb(212, 213, 207);
+}
+.slide-indicator-circle{
+    display: inline-block;
+    margin: 6px;
+    border-radius: 50%;
+    background-color: rgb(194, 192, 190);
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.slide-indicator-circle:hover{
+    background: rgb(153, 154, 146);
+    cursor: pointer;
+}
+
+
+.slide-indicator-circle-active{
+    background-color: rgb(97, 97, 95);
+    font-weight: bold;
+}
+.mode0-prev-2{
+    left: -35%;
+    z-index: 0;
+    transform: scale(0.8);
+}
+.mode0-prev-1{
+    left: -15%;
+    z-index: 1;
+    transform: scale(0.9);
+}
+
+.mode0-next-1{
+    left: 25%;
+    z-index: 1;
+    transform: scale(0.9);
+}
+.mode0-next-2{
+    left: 45%;
+    z-index: 0;
+    transform: scale(0.8);
+}
+.mode3-rotateHide{
+   -webkit-backface-visibility:hidden;
+   transform: rotateY(180deg);
+}
+.mode3-rotateShow{
+   -webkit-backface-visibility:hidden;
+   transform: rotateY(0deg);
+}
+
+.mode1-prev-2{
+    left: -167%;
+    z-index: 0;
+}
+.mode1-prev-1{
+    left: -80.5%;
+    z-index: 5;
+}
+
+.mode1-next-1{
+    left:92%;
+    z-index: 1;
+}
+.mode1-next-2{
+    left:178%;
+    z-index: 0;
+}
+
+
+.mode2-hidden{
+    z-index: 0;
+}
+.mode2-prev-1{
+    left: -51%;
+    transform: rotateY(-72deg);
+    z-index: 1;
+}
+
+.mode2-next-1{
+    left:62.2%;
+    transform: rotateY(72deg);
+    z-index: 1;
+}
+
+
+.hidden{
+    opacity:0;
+}
+.active{
+    opacity:1;
+}
+
+.mode-switch{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   font-weight: bolder;
+
+}
+.mode-switch input{
+    font-weight: bolder;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 4px 4px 4px #333333;
+
+}

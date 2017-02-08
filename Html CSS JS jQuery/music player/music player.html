@@ -9,73 +9,74 @@
     <link rel="stylesheet" href="css/music_player.css">
 </head>
 <body>
-    <div class="container1">
-    </div>
-    <div class="container2">
-
-
-        <div class="col-md-12">
-
-            <div class="song-info">
-                <h5 class = 'song-name'></h5>
-                <p class='song-artist'></p>
-
-                <span class='song-id'></span>
-            </div>
+        <div class="container1">
         </div>
-        <div class="row diskcover">
-            <div class="disk">
-                <img class = 'disk-images' src="music_images/music1.jpg" alt="">
-                <img class= 'disk-border'src="images/play_disc.png"  alt="">
-                <img class ='disk-needle needle-pause' src="images/play_needle.png" alt="" />
-            </div>
-        </div>
-        <div class="notice">
-            <p class='mode-notice'>Random</p>
-        </div>
-    	<div class="row control-panel">
-    		<div class="col-md-12">
-                <div class="time-bar">
-                    <div class="current-time">0:00
-                    </div>
-                    <div class= 'progress-fill'></div>
-                    <div class = 'time-progress'>
+        <div class="container2">
 
-                        <input class="time-progress-rate" type="range" value=0 min=0 max =100>
 
-                    </div>
-                    <div class="duration">0:00</div>
+            <div class="col-md-12">
 
+                <div class="song-info">
+                    <h5 class = 'song-name'></h5>
+                    <p class='song-artist'></p>
+
+                    <span class='song-id'></span>
                 </div>
-    			<div class="player-control">
-                    <div ><img class="prev" src="images/prev.png" alt=""></div>
-					<div ><img class="play play-icon"src="images/play.png" alt=""></div>
-					<div ><img class="next" src="images/next.png" alt=""></div>
+            </div>
+            <div class="row diskcover">
+                <div class="disk">
+                    <img class = 'disk-images' src="music_images/music1.jpg" alt="">
+                    <img class= 'disk-border'src="images/play_disc.png"  alt="">
+                    <img class ='disk-needle needle-pause' src="images/play_needle.png" alt="" />
                 </div>
-    		    <div class = "volume-control">
-                        <div><img class="play-mode random" src="images/random.png" alt=""></div>
-                        <div><img class="sound soundopen"src="images/sound.png" alt=""></div>
-                        <div>
-                                <input class="volume" type="range" value=100 min=0 max =100>
+            </div>
+            <div class="notice">
+                <p class='mode-notice'>Random</p>
+            </div>
+            <div class="row control-panel">
+                <div class="col-md-12">
+                    <div class="time-bar">
+                        <div class="current-time">0:00
                         </div>
-                        <div><img class='playlist' src="images/list.png" alt=""></div>
-    				</div>
+                        <div class= 'progress-fill'></div>
+                        <div class = 'time-progress'>
 
-    		</div>
-    	</div>
-        <audio id ='#id-audio-player'>
-             <source src="" type="audio/mpeg">
-        </audio>
-        <div class="list-container list-container-bg"></div>
-        <div class="list-container ">
-            <div class="song-list-head"></div>
-            <ul class="list-unstyled song-list">
+                            <input class="time-progress-rate" type="range" value=0 min=0 max =100>
 
-            </ul>
-            <div class='list-close fa fa-times'></div>
+                        </div>
+                        <div class="duration">0:00</div>
+
+                    </div>
+                    <div class="player-control">
+                        <div ><img class="prev" src="images/prev.png" alt=""></div>
+                        <div ><img class="play play-icon"src="images/play.png" alt=""></div>
+                        <div ><img class="next" src="images/next.png" alt=""></div>
+                    </div>
+                    <div class = "volume-control">
+                            <div><img class="play-mode random" src="images/random.png" alt=""></div>
+                            <div><img class="sound soundopen"src="images/sound.png" alt=""></div>
+                            <div>
+                                    <input class="volume" type="range" value=100 min=0 max =100>
+                            </div>
+                            <div><img class='playlist' src="images/list.png" alt=""></div>
+                        </div>
+
+                </div>
+            </div>
+            <audio id ='#id-audio-player'>
+                 <source src="" type="audio/mpeg">
+            </audio>
+            <div class="list-container list-container-bg"></div>
+            <div class="list-container ">
+                <div class="song-list-head"></div>
+                <ul class="list-unstyled song-list">
+
+                </ul>
+                <div class='list-close fa fa-times'></div>
+            </div>
+
         </div>
 
-    </div>
     <script type="text/javascript">
 
     </script>

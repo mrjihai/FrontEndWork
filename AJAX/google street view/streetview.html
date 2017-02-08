@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="streetview.css">
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+            <form id = "form-container" class="form-container">
+                <label class = 'col-md-3 col-sm-6 col-xs-12' for="street">Street: <input type="text" id="street" value=""></label>
+                <label class = 'col-md-3 col-sm-6 col-xs-12' for="city">City: <input type="text" id="city" value=""></label>
+                <button type = 'button' class = 'col-md-1 col-sm-12 col-xs-10 btn btn-primary' id="submit">submit</button>
+            </form>
+		</div>
+	</div>
+    <hr>
+    <div class='row'>
+            <h3 id = 'greeting'>Where do you want to live?</h3>
+    </div>
+    <hr>
+	<div class="row">
+        <!-- <div id = 'streetview'class="col-md-3">
+        </div> -->
+		<div id = 'nytimes'class="col-md-7">
+            <h4 id = 'nytimes-header'>New York Times Articles</h4>
+            <ul id = 'nytimes-articles'>What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+		</div>
+		<div id = 'wikipedia' class="col-md-4">
+            <h4>Relevant Wikipedia Links</h4>
+            <ul id ='wikipedia-links'>Type in an address above and find relevant Wikipedia articles here!</ul>
+		</div>
+	</div>
+
+</div>
+<script src = 'streetview.js'></script>
+</body>
+</html>
