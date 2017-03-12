@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(205, 18, 244);
+    color: black;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.banner{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin-bottom: 15px;
+}
+.banner h1{
+    font-weight: bold;
+}
+#id-nav {
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+}
+#id-nav li {
+    display: inline-block;
+    padding: 10px;
+    width: 23%;
+    cursor: pointer;
+    font-size: 1.5em;
+    color:black;
+    border-radius: 40%
+}
+
+#id-nav li:hover {
+    font-size: 1.8em;
+    background-color: rgb(195, 18, 220);
+}
+
+.active {
+    background-color: rgb(195, 18, 220);
+}
+
+/*info-display*/
+#id-info-display{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    padding:0px 0px 10px 0px;
+    list-style-type: none;
+    background-color: rgb(149, 46, 236);
+
+}
+#id-info-display .info-online,.info-offline{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.info-online{
+    background-color: rgb(156, 221, 213);
+}
+.info-offline{
+    background-color: rgb(218, 207, 215);
+}
+
+.info-offline p{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.info-left{
+    float:left;
+}
+.info-right{
+    padding-top: 1px;
+    text-align: left;
+    margin-left: 20%
+}
+#id-info-display a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    padding: 5px 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+}
+
+.hidden{
+    display: none;
+}
