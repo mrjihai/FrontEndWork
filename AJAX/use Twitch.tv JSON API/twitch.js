@@ -81,7 +81,7 @@ var offline_temp = function(name,logo){
 var click = function(){
 
     $('.all').on('click',function(){
-        $('.all').addClass('ative')
+        $('.all').addClass('active')
         $('.offline').removeClass('active')
         $('.online').removeClass('active')
         $('.info-online').removeClass('hidden')

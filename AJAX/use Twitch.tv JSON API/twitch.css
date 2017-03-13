@@ -56,9 +56,14 @@ body{
 
 .info-online{
     background-color: rgb(156, 221, 213);
+    border-right: green 10px solid;
 }
 .info-offline{
     background-color: rgb(218, 207, 215);
+    border-right: red 10px solid;
+
+}
+.info-online :hover{
 }
 
 .info-offline p{
