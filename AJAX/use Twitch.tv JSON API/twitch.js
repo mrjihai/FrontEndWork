@@ -18,10 +18,11 @@ var initialInfo = function(){
                     console.log(name)
                     var Url = baseUrl + '/users/'+ name +client_id +'&callback=?'
                     $.getJSON(Url,function(data){
-                        //console.log('offline')
+                        console.log(data)
+                        var userUrl = 'https://www.twitch.tv/' + name
                         var userName = data.display_name
                         var userLogo = data.logo
-                        var temp = offline_temp(userName,userLogo)
+                        var temp = offline_temp(userName,userLogo,userUrl)
                         $('#id-info-display').append(temp)
                     })
                 }
@@ -61,10 +62,10 @@ var online_temp = function(name,logo,game,status,url){
     return s
 }
 
-var offline_temp = function(name,logo){
+var offline_temp = function(name,logo,userUrl){
     var s = `
         <div class= 'info-offline'>
-            <a href =''target = '_blank'>
+            <a href =${userUrl} target = '_blank'>
                 <div class='info-left'>
                     <img class ='logo' src = ${logo}>
                 </div>

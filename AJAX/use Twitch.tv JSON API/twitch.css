@@ -27,7 +27,7 @@ body{
     cursor: pointer;
     font-size: 1.5em;
     color:black;
-    border-radius: 40%
+    border-radius: 20%
 }
 
 #id-nav li:hover {
@@ -37,6 +37,7 @@ body{
 
 .active {
     background-color: rgb(195, 18, 220);
+    border-bottom: black 2px solid;
 }
 
 /*info-display*/
@@ -50,7 +51,7 @@ body{
 
 }
 #id-info-display .info-online,.info-offline{
-    height: 100px;
+    height: 115px;
     margin-bottom: 10px;
 }
 
@@ -63,7 +64,16 @@ body{
     border-right: red 10px solid;
 
 }
-.info-online :hover{
+.info-online:hover{
+    /*background-color: grey;*/
+    width: 105%;
+
+}
+
+.info-offline:hover{
+    /*background-color: grey;*/
+    width: 105%;
+
 }
 
 .info-offline p{
@@ -73,6 +83,7 @@ body{
 }
 .info-left{
     float:left;
+    margin: 10px 5px 5px 10px;
 }
 .info-right{
     padding-top: 1px;
@@ -84,7 +95,6 @@ body{
     color: black;
 }
 .logo{
-    padding: 5px 5px;
     height: 100px;
     width: 100px;
     border-radius: 20%;
