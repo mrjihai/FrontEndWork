@@ -49,6 +49,10 @@ body{
     border-left: 1px solid rgb(176, 176, 176);
     color:#fff;
 }
+.nav1 li:last-child a{
+    border-right: 1px solid rgb(176, 176, 176);
+
+}
 .nav1 .navbar a:hover{
     background-image: url(../imgs/nav-hover.png);
 }
@@ -77,12 +81,13 @@ body{
     padding: 10px;
     text-decoration: none;
     color: white;
+    font-size: 19px;
 }
 
 .nav2 .dropdown-menu{
-    padding: 10px;
+    padding: 8px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
     float: right;
     margin-right: 10%;
 
@@ -101,8 +106,10 @@ body{
     text-align: center;
     list-style-type: none;
     border-top: 1px solid white;
-    border-bottom: 1px solid white;
+}
 
+.nav2 li:last-child{
+    border-bottom: 1px solid white;
 }
 
 
