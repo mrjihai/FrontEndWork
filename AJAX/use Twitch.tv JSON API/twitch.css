@@ -1,5 +1,4 @@
 body{
-    background-color: rgb(205, 18, 244);
     color: black;
 }
 
@@ -32,11 +31,11 @@ body{
 
 #id-nav li:hover {
     font-size: 1.8em;
-    background-color: rgb(195, 18, 220);
+    background-color: rgb(217, 217, 219);
 }
 
 .active {
-    background-color: rgb(195, 18, 220);
+    background-color: rgb(217, 217, 219);
     border-bottom: black 2px solid;
 }
 
@@ -47,7 +46,6 @@ body{
     margin-left: 15%;
     padding:0px 0px 10px 0px;
     list-style-type: none;
-    background-color: rgb(149, 46, 236);
 
 }
 #id-info-display .info-online,.info-offline{
