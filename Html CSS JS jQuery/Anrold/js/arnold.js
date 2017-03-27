@@ -13,6 +13,17 @@ $(document).ready(function(){
         setTimeout(function(){$('.menu').css('display','none')},500)
 
     })
+
+    $('.item').on('click',function(){
+        let movie = $(this).find('p').text()
+        let movieUrl = movieColletion[movie]
+        $('iframe').remove()
+        $('.movie-video').append(
+            `<iframe src='${movieUrl}' allowfullscreen>
+            </iframe>`
+        )
+    })
+
     var movieColletion ={
         '2013':'https://www.youtube.com/embed/oc0x-jiewTE?autoplay=1',
         '2012':'https://www.youtube.com/embed/xtpdj31wshI?autoplay=1',
@@ -52,14 +63,18 @@ $(document).ready(function(){
     $('.owl-prev').text('<')
     $('.owl-next').text('>')
 
-    $('.item').on('click',function(){
-        let movie = $(this).find('p').text()
-        let movieUrl = movieColletion[movie]
-        $('iframe').remove()
-        $('.movie-video').append(
-            `<iframe src='${movieUrl}' allowfullscreen>
-            </iframe>`
-        )
-    })
-
 });
+
+
+var click = function(){
+    $('.dropdown-menu').on('click',function(){
+
+        if($('.menu').css('display') =='none'){
+            $('.menu').css('display','block')
+        }else{
+            $('.menu').css('display','none')
+        }
+    })
+}
+
+click()
