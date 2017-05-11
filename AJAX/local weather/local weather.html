@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/weather-icons.min.css">
     <link rel="stylesheet" href="css/weather-icons-wind.min.css">
     <link rel="stylesheet" href="css/local_weather.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
 </head>
 <body>
     <div class="container container-bg">
@@ -28,10 +30,10 @@
     		<div class="col-md-12 ">
     			<div class="row">
                     <div class="col-md-8 dayandtime">
-                        <h5 class="day"></h5>
+                        <h4 class="day"></h4>
                     </div>
     				<div class="col-md-8">
-                        <h5 class="weather"></h5>
+                        <h4 class="weather"></h4>
     				</div>
     			</div>
     			<div class="row">
@@ -70,10 +72,50 @@
                     </div>
                 </div>
     		</div>
+            <div class="daily col-md-12 owl-carousel owl-theme">
+                <div class="item1">
+                    <canvas id="icon1" width="30px" height="30px"></canvas>
+                    <div>N/A</div>
+                </div>
+                <div class="item2">
+                    <canvas id="icon2" width="30px" height="30px"></canvas>
+                    <div>N/A</div>
+                </div>
+                <div class="item3">
+                    <canvas id="icon3" width="30px" height="30px"></canvas>
+                    <div>N/A</div>
+                </div>
+                <div class="item4">
+                    <canvas id="icon4" width="30px" height="30px"></canvas>
+                    <div>N/A</div>
+                </div>
+                <div class="item5">
+                    <canvas id="icon5" width="30px" height="30px"></canvas>
+                    <div>N/A</div>
+
+                </div>
+                <div class="item6">
+                    <canvas id="icon6" width="30px" height="30px"></canvas>
+                    <div>N/A</div>
+
+                </div>
+                <div class="item7">
+                    <canvas id="icon7" width="30px" height="30px"></canvas>
+                    <div>N/A</div>
+
+                </div>
+                <div class="item8">
+                    <canvas id="icon8" width="30px" height="30px"></canvas>
+                    <div>N/A</div>
+
+                </div>
+            </div>
     	</div>
+
     </div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://use.fontawesome.com/e4a745c582.js"></script>
+<script src ='js/owl.carousel.js'></script>
 <script src="js/skycons.js"></script>
 <script src="js/local_weather.js">
 

@@ -33,18 +33,45 @@ var getWeather = function(lat,lon,city,code,zipCode){
           $('.windSpeed').html("   " +windSpeed + " mph")
           $('.humidity').html("   " + (humidity*100).toFixed(2) +"%")
           //$('.weatherLogo').html("<div><i class='fa-5x wi wi-forecast-io-" + weatherIcon + " '></i></div>")
-          addIcon(weatherIcon)
+          //add the daily weather
+          var daily_weather = data.daily.data
+          console.log('daily --->'+ daily_weather[0].summary)
+          for(var i =0; i < daily_weather.length;i++){
+              //$('.item'+[i+1]).append('<div>'+daily_weather[i]+'</div>')
+              console.log(daily_weather[i].icon);
+              addDailyWeatherIcon(daily_weather[i].icon,i)
+              showDailyDay(daily_weather[i].time,i)
+              showMaxAndMin(daily_weather[i].temperatureMax.toFixed(0),daily_weather[i].temperatureMin.toFixed(0),i)
+          }
+          addCurrentWeatherIcon(weatherIcon)
           setBackground(weatherIcon)
           changeUint(tempF)
    })
 }
-var addIcon= function (weatherIcon){
+
+var addCurrentWeatherIcon= function (weatherIcon){
     var skycons  = new Skycons({"color": "white"})
     skycons.set('icon',weatherIcon)
     skycons.play()
 }
+var addDailyWeatherIcon = function(weatherIcon,i){
+    var skycons  = new Skycons({"color": "white"})
+    skycons.set('icon'+(i+1),weatherIcon)
+}
+
+var showMaxAndMin = function(max,min,i){
+    $('.item'+(i+1)).append(`<span class='min'>${min}°F</span>`)
+    $('.item'+(i+1)).append(`<span class='max'>${max}°F</span>`)
+}
+var showDailyDay = function(date,i){
+    var array = ['Sun','Mon','Tues','Wed','Thur','Fri','Sat']
+    var day = array[new Date(date*1000).getDay()]
+    //console.log(day);
+    $('.item'+(i+1)).find('div').text(day)
+}
+
 var getDayandTime = function(){
-    var array = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Firday','Saturday']
+    var array = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
     var day = array[(new Date).getDay()]
     var hours=(new Date).getHours();
     var minutes=(new Date).getMinutes();
@@ -54,7 +81,8 @@ var getDayandTime = function(){
     if(minutes<10){
         minutes = '0' + minutes
     }
-    $(".day").html(day + " " + hours +":"+minutes)
+    // $(".day").html(day + " " + hours +":"+minutes)
+    $(".day").html(day )
 }
 
 var setBackground = function(weatherIcon){
@@ -82,4 +110,16 @@ var changeUint = function(tempF) {
     })
 }
 
+var showDaily = function(){
+    $('.daily').owlCarousel({
+    items:4,
+    margin:0,
+    nav:false,
+    dots:true,
+    touchDrag:true,
+
+})
+
+}
 getLocation()
+showDaily()

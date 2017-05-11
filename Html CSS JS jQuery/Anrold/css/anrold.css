@@ -332,21 +332,20 @@ body{
 /*about.html*/
 .wiki {
     margin: auto;
+    width: 80%;
     text-align: center;
     margin-top: 20px;
+    height: 500px;
 }
 
 
 .wiki iframe{
-    margin: auto;
-    width: 80%;
-    height: 550px;
+    height: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width:650px) {
-    .wiki iframe{
-        margin: auto;
-        width: 80%;
+    .wiki{
         height: 400px;
     }
 }
@@ -621,7 +620,7 @@ tr:nth-child(odd){
 /* ---- grid ---- */
 
 .grid {
-    border:10px solid white;
+    border:5px solid white;
     border-radius: 5px;
     margin: auto;
     width: 80%;

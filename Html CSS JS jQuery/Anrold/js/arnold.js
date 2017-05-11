@@ -60,21 +60,8 @@ $(document).ready(function(){
         autoplayHoverPause:false,
     })
 
+
     $('.owl-prev').text('<')
     $('.owl-next').text('>')
 
 });
-
-
-var click = function(){
-    $('.dropdown-menu').on('click',function(){
-
-        if($('.menu').css('display') =='none'){
-            $('.menu').css('display','block')
-        }else{
-            $('.menu').css('display','none')
-        }
-    })
-}
-
-click()
