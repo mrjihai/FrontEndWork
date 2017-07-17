@@ -1,0 +1,35 @@
+<% include ./global/header.ejs %>
+<% include ./global/nav.ejs %>
+<div class="container pd-t-30">
+	<form class="form-horizontal col-md-offset-2 col-md-8" method="post" id="postForm">
+		<div class="form-group">
+			<label for="title" class="col-sm-2 control-label">Title</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="title" name="title" value="<%= post.title %>" disabled="disabled">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="post" class="col-sm-2 control-label mg-r-15">Tags</label>
+			<% post.tags.forEach(function (tag, index) { %>
+		    	<% if (tag) { %>
+		      	<span class="label label-info"><%= tag %></span>
+		    	<% } %>
+		  	<% }) %>
+		</div>
+
+		</script>
+
+		<div class="form-group">
+			<label for="post" class="col-sm-2 control-label">Content</label>
+			<div class="col-sm-10">
+				<textarea name="post" class="form-control" rows="15"></textarea>
+			</div>
+		</div>
+		<a href="javascript:;" onclick="window.history.back();" class="btn btn-success pull-right mg-r-20" >Back</a>
+		<input type="submit" class="btn btn-danger pull-right" value="Save" data-toggle="modal" data-target=".message"/>
+	</form>
+</div>
+
+<script type="text/javascript" src="/js/jquery.validate.min.js" ></script>
+
+<% include ./global/footer.ejs %>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='js/jquery-3.1.1.min.js'></script>
+    <script src='js/skrollr.js'></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mustang.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+    <script src='js/angular-skrollr.min.js'></script>
+    <script src='js/angular-masonry-directive.js'></script>
+
+    <title>Mustang</title>
+</head>
+<body ng-controller='myCtrl'>
+    <div class="container-fluid">
+        <% include ./global/navbar.ejs %>
+        <div class="row features" ng-view>
+            <div class="col-md-2 sidebar animated fadeInLeft">
+                <div class="sidebar-title">
+                    <span class="title-top">The 2017</span>
+                    <span class="modal-name">Mustang</span>
+                </div>
+                <div class="main-links">
+                    <div class="sidebar-active"><a href="#!/keyfeature">KEY FEATURES</a></div>
+                    <div><a href="">DESIGN</a></div>
+                    <div><a href="">HANDLING</a></div>
+                    <div><a href="">TECHNOLOGY</a></div>
+                    <div><a href="#!/performance">PERFORMANCE</a></div>
+
+                </div>
+
+            </div>
+            <div class="col-md-10  col-md-push-2 key-features">
+                <h1>Key Features</h1>
+                <div class=" grid">
+                    <div class="image-set">
+                        <a  href="img/p1.jpeg" data-lightbox="performance" data-title="2.3L EcoBoost®">
+                            <div class="grid-item gird-item-1 animated fadeInUp">
+                                <img src="img/4and1.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a  href="img/p2.jpeg" data-lightbox="performance" data-title="5.0L GT">
+                            <div class="grid-item grid-item-2 animated fadeInUp">
+                                <img src="img/p2.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a  href="img/p3.jpeg" data-lightbox="performance" data-title="Launch Control.">
+                            <div class="grid-item gird-item-2 animated fadeInUp">
+                                <img src="img/p3.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a  href="img/p4.jpeg" data-lightbox="performance" data-title="Electronic Line-Lock">
+                            <div class="grid-item grid-item-3"
+                                data-bottom-top='transform:translateY(900px);opacity:0'
+                                data-center-top='transform:translateY(0);opacity:1'>
+                                <img src="img/p4.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a  href="img/p5.jpeg" data-lightbox="performance" data-title="Selectable Drive Modes">
+                            <div class="grid-item"
+                            data-bottom-top='transform:translateY(900px);opacity:0'
+                            data-center-top='transform:translateY(0);opacity:1'>
+                                <img src="img/p5.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a  href="img/p2.jpeg" data-lightbox="performance" data-title="5.0L GT">
+                            <div class="grid-item grid-item-2"
+                                data-bottom-top='transform:translateY(900px);opacity:0'
+                                data-center-top='transform:translateY(0);opacity:1'>
+                                <img src="img/p2.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a  href="img/p3.jpeg" data-lightbox="performance" data-title="Launch Control.">
+                            <div class="grid-item gird-item-2"
+                                data-bottom-top='transform:translateY(900px);opacity:0'
+                                data-center-top='transform:translateY(0);opacity:1'>
+                                <img src="img/p3.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a  href="img/p4.jpeg" data-lightbox="performance" data-title="Electronic Line-Lock">
+                            <div class="grid-item grid-item-3"
+                                data-bottom-top='transform:translateY(900px);opacity:0'
+                                data-center-top='transform:translateY(0);opacity:1'>
+                                <img src="img/p4.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a  href="img/p5.jpeg" data-lightbox="performance" data-title="Selectable Drive Modes">
+                            <div class="grid-item"
+                                data-bottom-top='transform:translateY(900px);opacity:0'
+                                data-center-top='transform:translateY(0);opacity:1'>
+                                <img src="img/p5.jpeg" alt="">
+                                <div class="description">
+                                    <span class="description-title">FOUR CAR ONE SOUL</span>
+                                    <p class="description-text">
+                                        Fasten your seatbelts. Each engine delivers at least 300 horsepower.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src = 'js/smooth-scroll.min.js'></script>
+    <script src = 'js/masonry.pkgd.min.js'></script>
+    <script src='js/lightbox.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src ='js/script2.js'></script>
+    <script>
+        var myApp = angular.module("myApp", ['ngRoute',"sn.skrollr"]);
+
+        myApp.config(["snSkrollrProvider", function(snSkrollrProvider) {
+          snSkrollrProvider.config = { smoothScrolling: true,};
+        }]);
+        myApp.run(["snSkrollr", function(snSkrollr) {
+          snSkrollr.init();
+        }])
+        myApp.config(function($routeProvider){
+            $routeProvider
+            .when('/performance',{
+                templateUrl:'performance',
+            })
+            .when('/keyfeature',{
+                templateUrl:'keyfeature',
+            })
+            .otherwise(
+                {
+                templateUrl:'keyfeature',
+            })
+        })
+        myApp.controller('myCtrl',function($scope,$location){
+            $scope.$on('$viewContentLoaded',function(){
+                console.log('ng-view content loaded!');
+            })
+            $scope.$on('$routeChangeStart',function(event,next,current){
+                console.log('route change start!');
+            })
+        })
+    </script>
+</body>
+</html>

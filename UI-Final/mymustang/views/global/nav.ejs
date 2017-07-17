@@ -1,0 +1,67 @@
+<header class="header">
+	<% if(user) {%>
+	<div class="userhead">
+		<a href="/u/<%= user.name %>" id="userLink" data-toggle="tooltip"  data-placement="left" title="<%= user.name %>"><img src="<%= user.head %>" class="img-circle"  /></a>
+	</div>
+	<% } %>
+	<div class="container">
+		<nav class="navbar ">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				        <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+	      			</button>
+					<a class="navbar-brand" href="/">Blog For Mustang Fans</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav nav-pills pull-right">
+						<li class="search-wrap">
+							<span class="input-wrap">
+								<input type="text" class="form-control" name="keyword" placeholder="搜索文章" search-input/>
+							</span>
+							<span class="glyphicon glyphicon-search search-btn" ></span>
+
+						</li>
+						<li>
+							<a href="/">Blog</a>
+						</li>
+						<% if(!user) {%>
+						<li>
+							<a href="/login">Login</a>
+						</li>
+						<li>
+							<a href="/reg">Register</a>
+						</li>
+						<% } else { %>
+						<li>
+							<a href="/post">Post</a>
+						</li>
+						<li>
+							<a href="/tags">Tag</a>
+						</li>
+						<li>
+							<a href="/logout">Logout</a>
+						</li>
+						<% } %>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<script type="text/javascript">
+	$("#userLink").tooltip();
+		$(".search-btn").click(function(){
+			$(".input-wrap").toggleClass('active');
+			var keyword = $('[search-input]').val();
+			if(keyword){
+			 	$.get("/search", function(result){
+				    window.location.href="/search?keyword="+keyword;
+				});
+			}
+		})
+	</script>
+</header>

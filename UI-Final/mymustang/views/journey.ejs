@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='js/jquery-3.1.1.min.js'></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/mustang.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <title>Mustang</title>
+    <style type="text/css">
+</style>
+</head>
+<body>
+    <div class="slider-container">
+      <div class="slider-control left inactive"></div>
+      <div class="slider-control right"></div>
+      <ul class="slider-pagi"></ul>
+      <div class="slider">
+        <div class="slide slide-0 active">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+              <path class="slide__overlay-path" d="M0,0 60,0 410,405 0,405" />
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">GENERATION I, 1965-1973</h2>
+              <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-1 ">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+              <path class="slide__overlay-path" d="M0,0 60,0 410,405 0,405" />
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">GENERATION II, 1974-1978</h2>
+              <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+              <path class="slide__overlay-path" d="M0,0 60,0 410,405 0,405" />
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">GENERATION III, 1979-1993</h2>
+              <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+              <path class="slide__overlay-path" d="M0,0 60,0 410,405 0,405" />
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">GENERATION IV, 1994-2004</h2>
+              <p class="slide__text-desc">
+                  The 4th generation Mustang got a major redesign and was based on Fox-4 rear wheel drive platform. Ford knew that Mustang is an icon car that most people associated with Ford. So killing this nameplate would have had serious consequences and Ford didn’t want that to happen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-4">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+              <path class="slide__overlay-path" d="M0,0 60,0 410,405 0,405" />
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">GENERATION V , 2005 -2014</h2>
+              <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-5">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+              <path class="slide__overlay-path" d="M0,0 60,0 410,405 0,405" />
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">GENERATION VI</h2>
+              <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="padding:0">
+        <% include ./global/navbar.ejs %>
+        <div class="row home">
+            <div class="col-md-6"
+                data-bottom-top='transform:translateX(-900px);opacity:0'
+                data-40p-center='transform:translateX(0);opacity:1'>
+                <div class="home-gallery">
+                    <img src="img/bg-1.jpg" alt="">
+                    <div class="home-description">FEATURES</div>
+                    <div class="home-button2">
+                        <a href='/feature' class="btn btn-default home-explore" role="button">EXPLORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="home-features"
+                    data-bottom-top='transform:translateY(900px);opacity:0'
+                    data-40p-center='transform:translateY(0);opacity:1'>
+                    <img src="img/bg-2.jpg" alt="">
+                    <div class="home-description">GALLERY</div>
+                    <div class="home-button2">
+                        <a href='/gallery' class="btn btn-default home-explore" role="button">EXPLORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="home-blog"
+                    data-bottom-top='transform:translateX(900px);opacity:0'
+                    data-40p-center='transform:translateX(0);opacity:1'>
+                    <img src="img/bg-3.jpg" alt="">
+                    <div class="home-description home-description-blog ">BLOG</div>
+                    <div class="home-button2">
+                        <a href='/blog' class="btn btn-default home-explore home-explore-blog" role="button">EXPLORE</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src='js/skrollr.js'></script>
+    <script src = 'js/smooth-scroll.min.js'></script>
+    <script src = 'js/masonry.pkgd.min.js'></script>
+    <script src='js/lightbox.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/journey.js"></script>
+    <script src ='js/script2.js'></script>
+</body>
+</html>

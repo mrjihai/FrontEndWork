@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='js/jquery-3.1.1.min.js'></script>
+    <script src='js/skrollr.js'></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mustang.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="container-fluid" style="padding:0">
+        <% include ./global/navbar.ejs %>
+        <div class="gallery row">
+            <h1>Gallery</h1>
+            <div>
+                <ul>
+                    <li>ALL</li>
+                    <li>EXTERIOR</li>
+                    <li>INTERIOR</li>
+                </ul>
+            </div>
+            <div class="grid col-md-12">
+                <div class="image-set">
+                    <a class="ex" href="img/gallery/ex1.jpeg" data-lightbox="gallery">
+                        <div class="grid-item animated fadeInUp"><img src="img/gallery/ex1.jpeg" alt=""></div></a>
+                    <a class="ex" href="img/gallery/ex2.jpeg" data-lightbox="gallery">
+                        <div class="grid-item animated fadeInDown"><img class="img2" src="img/gallery/ex2.jpeg" alt=""></div></a>
+                    <a class="ex" href="img/gallery/ex3.jpeg" data-lightbox="gallery">
+                        <div class="grid-item animated fadeInRight"><img src="img/gallery/ex3.jpeg" alt=""></div></a>
+                    <a class="ex" href="img/gallery/ex4.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateY(900px);opacity:0'
+                            data-center-top='transform:translateY(0);opacity:1'><img src="img/gallery/ex4.jpeg" alt=""></div></a>
+                    <a class="ex" href="img/gallery/ex5.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateX(900px);opacity:0'
+                            data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/ex5.jpeg" alt=""></div></a>
+                    <a  class="ex" href="img/gallery/ex6.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateX(-900px);opacity:0'
+                            data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/ex6.jpeg" alt=""></div></a>
+                    <a class="ex" href="img/gallery/ex7.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateX(-900px);opacity:0'
+                            data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/ex7.jpeg" alt="">
+                        </div></a>
+                    <a class="ex" href="img/gallery/ex8.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateY(-900px);opacity:0'
+                            data-center-top='transform:translateY(0);opacity:1'><img src="img/gallery/ex8.jpeg" alt="">
+                        </div></a>
+                    <a class="ex" href="img/gallery/ex9.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateX(900px);opacity:0'
+                            data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/ex9.jpeg" alt="">
+                        </div></a>
+                    <a class="ex" href="img/gallery/ex10.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateY(900px);opacity:0'
+                            data-center-top='transform:translateY(0);opacity:1'><img src="img/gallery/ex10.jpeg" alt=""></div></a>
+                    <a class="ex" href="img/gallery/ex11.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateX(-900px);opacity:0'
+                            data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/ex11.jpeg" alt=""></div></a>
+                    <a class="ex" href="img/gallery/ex12.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateX(900px);opacity:0'
+                            data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/ex12.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in9.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                        data-bottom-top='transform:translateX(900px);opacity:0'
+                        data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/in9.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in1.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateY(900px);opacity:0'
+                            data-center-top='transform:translateY(0);opacity:1'><img src="img/gallery/in1.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in2.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                        data-bottom-top='transform:translateY(-900px);opacity:0'
+                        data-center-top='transform:translateY(0);opacity:1'><img src="img/gallery/in2.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in3.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateX(-900px);opacity:0'
+                            data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/in3.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in4.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateY(-900px);opacity:0'
+                            data-center-top='transform:translateY(0);opacity:1'><img src="img/gallery/in4.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in5.jpeg" data-lightbox="gallery">
+                        <div class="grid-item"
+                            data-bottom-top='transform:translateX(900px);opacity:0'
+                            data-center-top='transform:translateX(0);opacity:1'><img src="img/gallery/in5.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in6.jpeg" data-lightbox="gallery"><div class="grid-item"><img src="img/gallery/in6.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in7.jpeg" data-lightbox="gallery"><div class="grid-item"><img src="img/gallery/in7.jpeg" alt=""></div></a>
+                    <a class="in" href="img/gallery/in8.jpeg" data-lightbox="gallery"><div class="grid-item"><img src="img/gallery/in8.jpeg" alt=""></div></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src = 'js/smooth-scroll.min.js'></script>
+    <script src = 'js/masonry.pkgd.min.js'></script>
+    <script src='js/lightbox.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var $grid = $('.grid').masonry({
+              itemSelector: '.grid-item',
+              percentPosition: true,
+            });
+            var s = skrollr.init(
+                {forceHeight: false}
+            )
+
+
+        }
+
+    </script>
+</body>
+</html>

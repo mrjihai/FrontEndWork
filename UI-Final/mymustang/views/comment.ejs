@@ -1,0 +1,50 @@
+<div class="container">
+	<ul class="comments-list">
+		<li class="comment-title">Comment List</li>
+		<% if(post.comments.length!=0){ %>
+		<% post.comments.forEach(function (comment, index) { %>
+		<li class="comment">
+			<div class="comment-img">
+				<% if(comment.head){ %>
+					<img src="<%= comment.head %>" />
+				<% }else{ %>
+					<img src="/image/noavatar_default.png" />
+				<% } %>
+			</div>
+			<div class="comment-body">
+				<p>
+					<a href="/u/<%= comment.name %>"><%= comment.name %></a>
+				</p>
+				<div class="comment-content">
+					<%- comment.content %>
+				</div>
+				<p class="toolbar"><span class="time"><%= comment.time %></span></p>
+			</div>
+		</li>
+		<% }) %>
+		<% }else{ %>
+		<li class="comment-empty">No Comment</li>
+		<% } %>
+	</ul>
+	<% if (user) { %>
+	<div class="replybox">
+		<img src="<%= user.head %>" />
+		<form method="post">
+			<input type="hidden" name="name" value="<%= user.name %>" />
+			<input type="hidden" name="head" value="<%= user.head %>" />
+			<div class="textarea-wrap">
+				<textarea name="content" placeholder="Leave something ......"></textarea>
+			</div>
+			<div class="post-toolbar">
+				<span>Commenter：<%= user.name %></span>
+				<input type="submit" class="post-btn" value="comment" />
+			</div>
+
+		 </form>
+	 </div>
+	<% } else { %>
+	 <div class="nologin">
+	 	只有登录了才能参与评论，Please<a href="/login">Login</a>！如果你还没有账号你可以<a href="/reg">Register</a>.
+	 </div>
+	<% } %>
+</div>
